@@ -62,25 +62,24 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-	  function CopyToClipboard(containerid) {
-  if (document.selection) {
-    var range = document.body.createTextRange();
-    range.moveToElementText(document.getElementById(containerid));
-    range.select().createTextRange();
-    document.execCommand("copy");
-
-  } else if (window.getSelection) {
-    var range = document.createRange();
-    range.selectNode(document.getElementById(containerid));
-    window.getSelection().addRange(range);
-    document.execCommand("copy");
-    alert("text copied, copy in the text-area")
-  }
-}
-  
-
+	  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+	  <script src="../../assets/js/vendor/popper.min.js"></script>
+	  <script src="../../dist/js/bootstrap.min.js"></script>
+	  <script>
+		  function CopyToClipboard(containerid) {
+			  if (document.selection) {
+				  var range = document.body.createTextRange();
+				  range.moveToElementText(document.getElementById(containerid));
+				  range.select().createTextRange();
+				  document.execCommand("copy");
+			  } else if (window.getSelection) {
+				  var range = document.createRange();
+				  range.selectNode(document.getElementById(containerid));
+				  window.getSelection().addRange(range);
+				  document.execCommand("copy");
+				  alert("text copied, copy in the text-area")
+			  }
+		  }
+	  </script>
 </body></html>
