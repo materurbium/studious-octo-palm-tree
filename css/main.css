@@ -2,3 +2,6 @@ main.container {
 	margin: 0px 170.5px;
 }
 
+.row {
+	background-color: gray;
+}
