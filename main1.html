@@ -49,7 +49,7 @@
 		<div class="highlight">
 			<button id="button1" onclick="CopyToClipboard('div1')">Click to copy</button>
 			<div id="div1">
-				<pre><code>Text Too Copy</code> </pre>
+				<pre><code>Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. Text Too Copy. </code> </pre>
 			</div>
 		</div>
 	  <h2>Second example</h2>
@@ -70,20 +70,4 @@ To edit settings, press <span class="nt">&lt;kbd&gt;&lt;kbd&gt;</span>ctrl<span 
 	  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 	  <script src="../../assets/js/vendor/popper.min.js"></script>
 	  <script src="../../dist/js/bootstrap.min.js"></script>
-	  <script>
-		  function CopyToClipboard(containerid) {
-			  if (document.selection) {
-				  var range = document.body.createTextRange();
-				  range.moveToElementText(document.getElementById(containerid));
-				  range.select().createTextRange();
-				  document.execCommand("copy");
-			  } else if (window.getSelection) {
-				  var range = document.createRange();
-				  range.selectNode(document.getElementById(containerid));
-				  window.getSelection().addRange(range);
-				  document.execCommand("copy");
-				  alert("text copied, copy in the text-area")
-			  }
-		  }
-	  </script>
 </body></html>
