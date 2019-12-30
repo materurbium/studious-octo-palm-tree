@@ -18,6 +18,7 @@
 
 .container-fluid {
 	margin-left: 0px;
+	padding-left: 0px;
 }
 
 /* To fix the content of the page indenting too much */
@@ -29,6 +30,11 @@
 }
 
 h1 {
+	font-size: 2em;
+	padding: .5em 0em .25em 0em;
+}
+
+h1.top {
 	font-size: 2em;
 	padding: .5em 0em .25em 0em;
 }
@@ -55,4 +61,25 @@ h2 {
 
 .sidebar-sticky {
 	height:100vh;
+}
+
+.col-12.col-md-8 {
+}
+
+.col-6.col-md-4 {
+	padding: 20px;
+}
+
+col-md-9.ml-sm-auto.col-lg-10.px-4 {
+	
+}
+
+.btn-light {
+  background-color: transparent;
+  color: #708090;
+  border: none;
+}
+
+.btn-light:visited {
+	border: none;
 }
