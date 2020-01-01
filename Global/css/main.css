@@ -16,7 +16,7 @@
 	background-color: transparent;
 }
 
-.container-fluid {
+.container-fluid.top {
 	margin-left: 15px;
 	padding-left: 0px;
 }
