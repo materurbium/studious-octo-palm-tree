@@ -17,21 +17,21 @@
 }
 
 .container-fluid {
-	margin-left: 0px;
+	margin-left: 15px;
 	padding-left: 0px;
 }
 
 /* To fix the content of the page indenting too much */
 @media (min-width: 1200px)
 {
-	.container, .container-lg, .container-md, .container-sm, .container-xl {
+	.container-sub {
 		max-width: 1600px;
 	}
 }
 
 h1 {
 	font-size: 2em;
-	padding: .5em 0em .25em 0em;
+	padding: .3em 0em 0em 0em;
 }
 
 h1.top {
@@ -45,8 +45,12 @@ h2 {
 }
 
 .breadcrumb {
-	margin: 0px 0px 0px 30px;
+	margin: 10px 0px 10px 0px;
 	padding: 0px;
+}
+
+nav.breadcrumb {
+	margin-bottom: 20px;
 }
 
 .pt-3 {
@@ -82,4 +86,24 @@ col-md-9.ml-sm-auto.col-lg-10.px-4 {
 
 .btn-light:visited {
 	border: none;
+}
+
+div.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.pt-3.pb-2.mb-3.border-bottom {
+	margin-left: 15px;
+	padding-left: 0px;
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #94989c;
+    text-decoration: none;
+}
+	
+.btn-link:hover {
+    color: #5b5b5b;
+    text-decoration: none;
+}
+
+.btn-link:focus {
+    text-decoration: none;
 }
