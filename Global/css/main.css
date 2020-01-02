@@ -107,3 +107,9 @@ div.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.p
 .btn-link:focus {
     text-decoration: none;
 }
+
+a
+{
+target-name:new;
+target-new:tab;
+}
