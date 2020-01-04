@@ -107,13 +107,11 @@ div.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.p
 .btn-link:focus {
     text-decoration: none;
 }
-
-.t-padding {
-	color: red;
+@media (max-width: 600px) {
+	.jumbotron.text-center {
+		padding-bottom: 10px;
+		margin-bottom: 0px;
 }
-
-.jumbotron.text-center {
-	color: red;
 }
 
 @media (max-width: 600px) {
