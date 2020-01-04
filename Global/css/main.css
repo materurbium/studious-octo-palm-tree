@@ -107,3 +107,20 @@ div.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.p
 .btn-link:focus {
     text-decoration: none;
 }
+
+
+.10px-padding {
+	color: red;
+}
+
+
+.jumbotron.text-center {
+	color: red;
+}
+
+@media (max-width: 400px)
+{
+	.pl-4, .px-4 {
+		padding-left: 0rem;
+	}
+}
