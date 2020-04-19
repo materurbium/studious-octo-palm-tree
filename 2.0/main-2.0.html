@@ -4,7 +4,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
-    <title>Sticky Footer Navvvbar Templddate for Bootstrap</title>
+    <title>Sticky Footer Navvvbar Template for Bootstrap</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/">
     	<!-- Bootstrap core CSS -->
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -13,6 +13,7 @@
 		<link href="../Global/css/main.css" rel="stylesheet">
 	<!-- <link href="css/docs.min.css" rel="stylesheet"> -->
 	<!-- <link href="css/main.css" rel="stylesheet"> -->
+	<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
   </head>
   <body>
     <header>
@@ -162,6 +163,14 @@
 				<h2>Code Sample 2</h2>
 					<input type="text" value="Hello World" id="myInput">
 					<button onclick="myFunction()">Copy text</button>
+				<h2>Code Sample 3</h2>
+					<!-- Target -->
+					<textarea id="bar">Mussum ipsum cacilds...</textarea>
+
+					<!-- Trigger -->
+					<button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar">
+						Cut to clipboard
+					</button>	
 			</main>
 		</div>
 		</div>
