@@ -196,4 +196,12 @@ class Voila {
 		alert("Copied the text: " + copyText.value);
 		}
 	</script>
+	<script>
+		function myFunction(event) {
+		  if (event.keyCode == 16) {
+			// Execute command if user presses the SHIFT button:
+			document.execCommand("copy");
+		  }
+		}
+	</script>
 </body></html>
