@@ -174,7 +174,7 @@ class Voila {
 					}</pre>	
 					<button id="button1" onclick="CopyToClipboard('div1')">Click to copy</button>
 <br /><br />
-<textarea placeholder="Press ctrl+v to Paste the copied text" rows="5" cols="100"></textarea>
+<textarea placeholder="Press ctrl+v to Paste the copied text" rows="15" cols="100"></textarea>
 			</main>
 		</div>
 		</div>
@@ -200,7 +200,6 @@ class Voila {
 				range.selectNode(document.getElementById(containerid));
 				window.getSelection().addRange(range);
 				document.execCommand("copy");
-				alert("Text has been copied, now paste in the text-area")
 			  }
 			}
 	</script>
