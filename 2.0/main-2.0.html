@@ -167,14 +167,14 @@
 					<button onclick="myFunction()">Copy text</button>
 				<h2>Code Sample 3</h2>
 				<h2>Code Sample 4</h2>
-				<button onclick="myFunction()">Copy</button>
-					<pre class="prettyprint">
+					<pre class="prettyprint" id="myInput">>
 class Voila {
 	public:
 	// Voila
 	static const string VOILA = "Voila";
 	// will not interfere with embedded tags.
 					}</pre>	
+					<button onclick="myFunction()">Copy</button>
 			</main>
 		</div>
 		</div>
@@ -190,6 +190,9 @@ class Voila {
     <!-- Placed at the end of the document so the pages load faster -->
 	<script>
 		function myFunction() {
+		 var copyText = document.getElementById("myInput");
+		copyText.select();
+		copyText.setSelectionRange(0, 99999)
 		document.execCommand("copy");
 		alert("Copied the text: ");
 		}
