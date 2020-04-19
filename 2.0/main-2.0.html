@@ -164,7 +164,7 @@
 					</div>
 				<h2>Code Sample 2</h2>
 				<h2>Code Sample 3</h2>
-				<h2 id="myInput">Code Sample 4</h2>
+				<h2 id="div1">Code Sample 4</h2>
 					<pre class="prettyprint">
 class Voila {
 	public:
@@ -172,7 +172,11 @@ class Voila {
 	static const string VOILA = "Voila";
 	// will not interfere with embedded tags.
 					}</pre>	
-					<button onclick="myFunction()">Copy</button>
+					<button id="button1" onclick="CopyToClipboard('div1')">Click to copy</button>
+<br /><br />
+<div id="div1">Text To Copy </div>
+<br />
+<textarea placeholder="Press ctrl+v to Paste the copied text" rows="5" cols="20"></textarea>
 			</main>
 		</div>
 		</div>
@@ -186,13 +190,29 @@ class Voila {
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-	<script>
+		<script>
+			function CopyToClipboard(containerid) {
+			  if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(document.getElementById(containerid));
+				range.select().createTextRange();
+				document.execCommand("copy");
+			  } else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNode(document.getElementById(containerid));
+				window.getSelection().addRange(range);
+				document.execCommand("copy");
+				alert("Text has been copied, now paste in the text-area")
+			  }
+			}
+	</script>
+	<!--<script>
 		function myFunction() {
 		document.getElementById("myInput").innerHTML;
 		document.execCommand("copy");
 		alert("Copied the text");
 		}
-	</script>
+	</script>-->
 	<!--<script>
 		function myFunction() {
 		 var copyText = document.getElementById("myInput");
