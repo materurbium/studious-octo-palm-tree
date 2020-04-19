@@ -190,13 +190,20 @@ class Voila {
     <!-- Placed at the end of the document so the pages load faster -->
 	<script>
 		function myFunction() {
+		document.getElementById("myInput");
+		document.execCommand("copy");
+		alert("Copied the text);
+		}
+	</script>
+	<!--<script>
+		function myFunction() {
 		 var copyText = document.getElementById("myInput");
 		copyText.select();
 		copyText.setSelectionRange(0, 99999)
 		document.execCommand("copy");
 		alert("Copied the text: ") + copyText.value);
 		}
-	</script>
+	</script>-->
 	<!--<script>
 		function myFunction(event) {
 		  if (event.keyCode == 16) {
