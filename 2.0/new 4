@@ -1,0 +1,30 @@
+Advantages of Static Sites
+1) Fast
+Static sites are fast! Since there are no database queries, no templates to render, and no client-server requests to process, a static site will always load faster.
+
+2) Secure
+Dynamic websites are constantly at risk of attack. Drupal, which powers 5% of all websites (12+ million users) was recently hacked and Wordpress, which powers 26% of all websites, is notorious for frequent security vulnerabilities.
+
+3) Cheap
+Static sites (like this one) costs pennies per month to run on services like Amazon S3. Dynamic sites require the setup, hosting, and maintenance of a server which is much, much more expensive.
+
+4) Scalable
+Unexpected traffic surges can crash a dynamic site. A static site is much better prepared as delivering static pages consumes very little server resources.
+
+Disadvantages of static sites (and potential solutions)
+1) No CMS for non-developers
+Traditional static site generators cannot be updated via a content management system (CMS) by non-technical users. However several startups now offer web-based CMSs for static site generators including Contentful, CloudCannon, Forestry, and Pulse. Lektor, a new Python-powered SSG, provides a Mac app CMS.
+
+2) No real-time content
+Displaying notifications, recommended posts, or other updates is tough on a static site if there are constant updates. Technically this can be done via Javascript and endpoint APIs. For example, here’s one hackish approach. There are no best-practices currently but I expect this will change in the future.
+
+3) No user input
+A static site can’t, by itself, accept user input. But via third-party services, it is possible to accept a growing list of inputs: emails, forms and surveys, and comments.
+
+4) No user login
+A static site, by definition, can’t handle user logins directly in a secure fashion. This is another, seemingly intractable, problem.
+
+There are, however, some new approaches that offer a peek at what the future might offer. For example Jekyll, the most popular static site generator, offers jekyll-auth to provide OAuth against Github.
+
+Conclusions
+Static site generators have emerged in recent years as a popular bridge between static and dynamic websites. While there are still some existing tradeoffs, the list of dynamic-only features is shrinking. Once static CMS interfaces truly emerge to allow non-developers to update SSG content, expect the growth of static site generators to take off exponentially.
