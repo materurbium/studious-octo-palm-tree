@@ -15,7 +15,7 @@
 		<link href="../Global/assets/css/docs.min.css" rel="stylesheet">
 	<!-- <link href="css/docs.min.css" rel="stylesheet"> -->
 	<!-- <link href="css/main.css" rel="stylesheet"> -->
-	<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+	<script src="../Global/clipboard.js-masterdist/clipboard.min.js"></script>
 	<script src="../Global/google-code-prettify/run_prettify.js"></script>  
 	<link rel="stylesheet" type="text/css" href="../Global/google-code-prettify/skins/default.css">
   </head>
@@ -173,6 +173,21 @@
 	}
 						</pre>	
 					</div>
+				<h2>Code Sample 2</h2>
+					<div style="background-color: #f7f7f9; width:75%;">
+						<div style="display:flex; justify-content:flex-end; width:100%; padding-right:10px; padding-top:10px;">
+							<button class="btn-clipboard" style="position:relative; top:0; right:0; " title data-original-title="Copy to clipboard" onclick="CopyToClipboard('div1')">Copy</button>
+						</div>
+						<pre class="prettyprint" style="border:none;" id="bar">
+  class Voila {
+    public:
+    // Voila
+    static const string VOILA = "Voila";
+    // will not interfere with embedded tags.
+	}
+						</pre>	
+						<button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar"> Cut to clipboard</button>
+					</div>
 				<textarea placeholder="Press ctrl+v to Paste the copied text" rows="10" cols="100"></textarea>
 			</main>
 		</div>
@@ -202,29 +217,16 @@
 			  }
 			}
 	</script>
-	<!--<script>
-		function myFunction() {
-		document.getElementById("myInput").innerHTML;
-		document.execCommand("copy");
-		alert("Copied the text");
-		}
-	</script>-->
-	<!--<script>
-		function myFunction() {
-		 var copyText = document.getElementById("myInput");
-		copyText.select();
-		copyText.setSelectionRange(0, 99999)
-		document.execCommand("copy");
-		alert("Copied the text: ") + copyText.value);
-		}
-	</script>-->
-	<!--<script>
-		function myFunction(event) {
-		  if (event.keyCode == 16) {
-			// Execute command if user presses the SHIFT button:
-			document.execCommand("copy");
-			alert("Copied the text");
-			}
-		}
-	</script> -->
+<!-- 3. Instantiate clipboard.js by passing a string selector -->
+    <script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
 </body></html>
