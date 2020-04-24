@@ -231,14 +231,14 @@
 	-->
 <!-- 3. Instantiate clipboard.js by passing a string selector -->    
     <script>
-    var clipboard = new ClipboardJS('.btn');
+var clipboard = new Clipboard('.copyButton');
 
-    clipboard.on('success', function(e) {
-        console.log(e);
-    });
+clipboard.on('success', function(e) {
+  console.log(e);
+});
 
-    clipboard.on('error', function(e) {
-        console.log(e);
-    });
+clipboard.on('error', function(e) {
+  console.log(e);
+});
     </script>
 </body></html>
