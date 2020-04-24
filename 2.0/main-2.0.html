@@ -201,10 +201,15 @@
   Address: @item.Address
 </div>
 <button class="copyButton" id="copyButtonId" data-id="@item.Type" data-clipboard-action="copy" data-clipboard-target="div#copy">Copy!</button>
-				<div id="copy2">
-  @item.Type
-  Name2dd...: @item.Name 
-  Address: @item.Address
+				<div>
+						<pre class="prettyprint" style="border:none;" id="copy2">
+  class Number 3 {
+    public:
+    // Voila
+    static const string VOILA = "Voila";
+    // will not interfere with embedded tags.
+	}
+						</pre>	
 </div>
 <button class="copyButton" id="copyButtonId" data-id="@item.Type" data-clipboard-action="copy" data-clipboard-target="div#copy2">Copy!</button>
 			</main>
