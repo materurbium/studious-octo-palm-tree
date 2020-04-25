@@ -162,7 +162,7 @@
 				</div>
 				<p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
 				<p>Back to <a href="../sticky-footer/">the default sticky footer</a> minus the navbar.</p>
-				<h2>Code Sample</h2>
+				<!-- <h2>Code Sample 1</h2>
 					<div style="background-color: #f7f7f9; width:75%;">
 						<div style="display:flex; justify-content:flex-end; width:100%; padding-right:10px; padding-top:10px;">
 							<button class="btn-clipboard" style="position:relative; top:0; right:0;" title data-original-title="Copy to clipboard" onclick="CopyToClipboard('div1')">Copy</button>
@@ -176,8 +176,9 @@
 	}
 						</pre>	
 					</div>
-				<textarea placeholder="Press ctrl+v to Paste the copied text" rows="10" cols="100"></textarea>
-				<h2>Code Sample 2</h2>
+				<textarea placeholder="Press ctrl+v to Paste the copied text" rows="10" cols="100"></textarea> -->
+				
+				<h2>Code Sample A</h2>
 					<div style="background-color: #f7f7f9; width:75%;">
 						<div style="display:flex; justify-content:flex-end; width:100%; padding-right:10px; padding-top:10px;">
 							<button class="btn-clipboard" style="position:relative; top:0; right:0; " title data-original-title="Copy to clipboard" onclick="CopyToClipboard('div1')">Copy</button>
@@ -193,7 +194,7 @@
 						<button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar"> Cut to clipboard</button>
 					</div>
 				<textarea placeholder="Press ctrl+v to Paste the copied text" rows="10" cols="100"></textarea>
-				<div id="copy">
+				<div id="copy1">
   @item.Type
   Name...: @item.Name 
   Address: @item.Address
@@ -211,12 +212,12 @@
   Address: @item.Address
 </div>
 <button class="copyButton" id="copyButtonId" data-id="@item.Type" data-clipboard-action="copy" data-clipboard-target="div#copy3">Copy!</button>
-				<h2>Code Sample 3</h2>
+				<h2>Code Sample B</h2>
 				<div style="background-color: #f7f7f9; width:75%;">
 					<div style="display:flex; justify-content:flex-end; width:100%; padding-right:10px; padding-top:10px;">
-						<button class="btn-clipboard" style="position:relative; top:0; right:0;" id="copyButtonId" data-id="@item.Type" data-clipboard-action="copy" data-clipboard-target="pre#copy4">Copy!</button>
+						<button class="btn-clipboard" style="position:relative; top:0; right:0;" id="copyButtonId" data-id="@item.Type" data-clipboard-action="copy" data-clipboard-target="pre#copyb">Copy!</button>
 					</div>
-					<pre class="prettyprint" style="border:none;" id="copy4">
+					<pre class="prettyprint" style="border:none;" id="b">
   class Number fu3 {
     public:
     // Voila
@@ -226,12 +227,12 @@
 					</pre>
 				</div>
 				<textarea placeholder="Press ctrl+v to Paste the copied text" rows="10" cols="100"></textarea>
-				<h2>Code Sample 4</h2>
+				<h2>Code Sample C</h2>
 				<div style="background-color: #f7f7f9; width:75%;">
 					<div style="display:flex; justify-content:flex-end; width:100%; padding-right:10px; padding-top:10px;">
-						<button class="copyButton" id="copyButtonId" data-id="@item.Type" data-clipboard-action="copy" data-clipboard-target="pre#copy5">Copy!</button>
+						<button class="btn-clipboard" style="position:relative; top:0; right:0;"  id="copyButtonId" data-id="@item.Type" data-clipboard-action="copy" data-clipboard-target="pre#c">Copy!</button>
 					</div>
-					<pre class="prettyprint" style="border:none;" id="copy5">
+					<pre class="prettyprint" style="border:none;" id="c">
   class Number fu4 {
     public:
     // Voila
