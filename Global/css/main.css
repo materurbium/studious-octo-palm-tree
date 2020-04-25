@@ -119,3 +119,8 @@ div.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.p
 			display: none;
 		}
 }
+
+section.jumbotron.text-center {
+	padding-top: 100px;
+    padding-bottom: 15px;
+}
