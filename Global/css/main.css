@@ -31,7 +31,7 @@
 
 h1 {
 	font-size: 2em;
-	padding: .3em 0em 0em 0em;
+	padding: .5em 0em 0em 0em;
 }
 
 h1.top {
@@ -121,6 +121,6 @@ div.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.p
 }
 
 section.jumbotron.text-center {
-	padding-top: 100px;
+	padding-top: 80px;
     padding-bottom: 15px;
 }
