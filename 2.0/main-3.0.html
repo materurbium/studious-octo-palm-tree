@@ -1,27 +1,26 @@
-<html lang="en"><head>
+<html lang="en">
+   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
     <title>Sticky Footer Navvvbar Template for Bootstrap</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    	<!-- Bootstrap core CSS -->
-	<link href="../css/bootstrap.min.css" rel="stylesheet">
-	<!-- Custom styles for this template -->
-    	<link href="../Global/sticky-footer-navbar.css" rel="stylesheet">
-		<link href="../Global/css/main.css" rel="stylesheet">
 		<!-- For the Copy button styling -->
 		<link href="../Global/assets/css/docs.min.css" rel="stylesheet">
-
-	<!-- <link href="css/docs.min.css" rel="stylesheet"> -->
-	<!-- <link href="css/main.css" rel="stylesheet"> -->
+	<!-- Script for code clipboard -->
 	<script src="../Global/clipboardmaster/dist/clipboard.min.js"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	<!-- <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script> -->
+	<!-- CSS for Prettify -->
 	<script src="../Global/google-code-prettify/run_prettify.js"></script>  
 	<link rel="stylesheet" type="text/css" href="../Global/google-code-prettify/skins/default.css">
+	    	<!-- Bootstrap core CSS -->
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+    	<link href="../Global/sticky-footer-navbar.css" rel="stylesheet">
+		<link href="../Global/css/main.css" rel="stylesheet">
   </head>
   <!--<body onkeydown="myFunction(event)">-->
   <body>
@@ -203,25 +202,29 @@
 				<textarea placeholder="Press ctrl+v to Paste the copied text" rows="10" cols="100"></textarea> -->
 				<!-- Start -->
 				<h2>Code Sample A</h2>
-				<div class="container">
-						<div class="col-md-12 ct-content">
-							<form id="searchForm" action="">
-								<div class="row">
-									<div class="col-md-10 col-sm-12">
-										<input id="txtSearchTerm" name="q" class="search-page-search" placeholder="What are you looking for?">
-									</div>
-									<div class="col-md-2 col-sm-12">
-										<input type="submit" onClick="javascript:JSFiddleSubmit();return false;" class="search-page-search-submit" value="Search">
-									</div>
+					<div class="container">
+						  <div class="ct-content">
+							<form id="searchForm" action="google-search.html">
+							  <div class="row">
+								<div class="col-md-10 col-sm-12">
+								  <input id="txtSearchTerm" name="q" class="search-page-search" placeholder="What are you looking for?" value="">
 								</div>
+								<div class="col-md-2 col-sm-12">
+								  <input type="submit" class="search-page-search-submit" value="Search">
+								</div>
+							  </div>
 							</form>
-						<div id="searchResult"></div>
-					<div id="output"></div>
-					<div class="pager_controls">
-					<p>
-						<a onclick="documentTrack('#');" href="#" id="lnkPrev" title="Display previous result page" style="display:none;">Previous</a> <a onclick="documentTrack('#');" href="#" id="lnkNext" title="Display next result page" style="display:none;">Next</a>
-					</p>
-				</div>
+							<div id="searchResult"></div>
+							<div id="output"></div>
+							<div class="pager_controls">
+							  <p><a onclick="documentTrack('#');" href="#" id="lnkPrev" title="Display previous result page" style="display:none;">Previous</a> <a onclick="documentTrack('#');" href="#" id="lnkNext" title="Display next result page" style="display:none;">Next</a></p>
+							  </div>
+							</div>
+						  </div>
+						</div>
+						
+				<script async src="https://cse.google.com/cse.js?cx=YOUR_CSE_ID"></script>
+<div class="gcse-searchresults-only"></div>
 				<h2>Code Sample B</h2>
 					<p>THIS</p>
 					<div class="container">
