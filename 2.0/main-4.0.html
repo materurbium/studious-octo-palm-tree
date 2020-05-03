@@ -256,12 +256,15 @@
 	</script>
 	-->
 <!-- 3. Instantiate clipboard.js by passing a string selector. .copyButton changed to .btn-clipboard to tie into the boostrap button styling -->    
-<!-- Number of searches per day will be limited unless google_api_key is specified (https://console.developers.google.com) -->
-<!-- Add your google_cse_id after registering (https://cse.google.com/) -->
-<script>
-var mGoogleApiKey = "AIzaSyDeatpFNq8I7eUxNp6ABtNww6vCFRLM4rs";
-var mGoogleCustomSearchKey = "123456789123456789123:abcdefghijk";
+    <script>
+var clipboard = new Clipboard('.btn-clipboard');
 
-Search($("#txtSearchTerm").val(),0);
-<script>
+clipboard.on('success', function(e) {
+  console.log(e);
+});
+
+clipboard.on('error', function(e) {
+  console.log(e);
+});
+    </script>
 </body></html>
