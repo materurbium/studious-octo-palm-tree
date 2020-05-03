@@ -1,27 +1,35 @@
 <html lang="en">
    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
-    <title>Sticky Footer Navvvbar Template for Bootstrap</title>
-		<!-- For the Copy button styling -->
-		<link href="../Global/assets/css/docs.min.css" rel="stylesheet">
-	<!-- Script for code clipboard -->
-	<script src="../Global/clipboardmaster/dist/clipboard.min.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-	<!-- <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script> -->
-	<!-- CSS for Prettify -->
-	<script src="../Global/google-code-prettify/run_prettify.js"></script>  
-	<link rel="stylesheet" type="text/css" href="../Global/google-code-prettify/skins/default.css">
-	    	<!-- Bootstrap core CSS -->
-	<link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/">
-	<link href="../css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom styles for this template -->
-    	<link href="../Global/sticky-footer-navbar.css" rel="stylesheet">
-		<link href="../Global/css/main.css" rel="stylesheet">
-  </head>
+   <script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+</head>
   <body>
     <header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -182,6 +190,11 @@
 				<textarea placeholder="Press ctrl+v to Paste the copied text" rows="10" cols="100"></textarea> -->
 				<!-- Start -->
 				<h2>Code Sample A Page One</h2>
+				<div w3-include-html="content.html"></div> 
+					<script>
+					includeHTML();
+					</script> 
+				<div><h2>Hello</h2></div>
 				<!-- <script async src="https://cse.google.com/cse.js?cx=017763480075036721278:rjanrtcieu9"></script>
 				<div class="gcse-search"></div>-->
 				<div style="background-color: #f7f7f9; width:50%;">
@@ -245,14 +258,43 @@
 	-->
 <!-- 3. Instantiate clipboard.js by passing a string selector. .copyButton changed to .btn-clipboard to tie into the boostrap button styling -->    
     <script>
-var clipboard = new Clipboard('.btn-clipboard');
+		var clipboard = new Clipboard('.btn-clipboard');
 
-clipboard.on('success', function(e) {
-  console.log(e);
-});
+		clipboard.on('success', function(e) {
+		  console.log(e);
+		});
 
-clipboard.on('error', function(e) {
-  console.log(e);
-});
+		clipboard.on('error', function(e) {
+		  console.log(e);
+		});
     </script>
+	<script>
+	function includeHTML() {
+	  var z, i, elmnt, file, xhttp;
+	  /* Loop through a collection of all HTML elements: */
+	  z = document.getElementsByTagName("*");
+	  for (i = 0; i < z.length; i++) {
+		elmnt = z[i];
+		/*search for elements with a certain atrribute:*/
+		file = elmnt.getAttribute("w3-include-html");
+		if (file) {
+		  /* Make an HTTP request using the attribute value as the file name: */
+		  xhttp = new XMLHttpRequest();
+		  xhttp.onreadystatechange = function() {
+			if (this.readyState == 4) {
+			  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+			  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+			  /* Remove the attribute, and call this function once more: */
+			  elmnt.removeAttribute("w3-include-html");
+			  includeHTML();
+			}
+		  }
+		  xhttp.open("GET", file, true);
+		  xhttp.send();
+		  /* Exit the function: */
+		  return;
+		}
+	  }
+	}
+	</script>
 </body></html>
