@@ -10,15 +10,6 @@
 
 	  gtag('config', 'UA-165287580-1');
 	</script>
-	<!-- Load Embed API Library -->
-<script>
-(function(w,d,s,g,js,fjs){
-  g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(cb){this.q.push(cb)}};
-  js=d.createElement(s);fjs=d.getElementsByTagName(s)[0];
-  js.src='https://apis.google.com/js/platform.js';
-  fjs.parentNode.insertBefore(js,fjs);js.onload=function(){g.load('analytics')};
-}(window,document,'script'));
-</script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -193,6 +184,15 @@
 								<section id="auth-button"></section>
 								<section id="view-selector"></section>
 								<section id="timeline"></section>
+								<!-- Load Embed API Library -->
+								<script>
+								(function(w,d,s,g,js,fjs){
+								  g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(cb){this.q.push(cb)}};
+								  js=d.createElement(s);fjs=d.getElementsByTagName(s)[0];
+								  js.src='https://apis.google.com/js/platform.js';
+								  fjs.parentNode.insertBefore(js,fjs);js.onload=function(){g.load('analytics')};
+								}(window,document,'script'));
+								</script>
 								<h2>Code Sample A Page Six</h2>
 								<div style="background-color: #f7f7f9; width:50%;">
 									<div style="display:flex; justify-content:flex-end; width:100%; padding-right:10px; padding-top:10px;">
@@ -237,24 +237,6 @@
         <span class="text-muted">Place sticky footer content here.</span>
       </div>
     </footer>
-    <!-- Bootstrap core JavaScript ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-	    <!-- 	<script>
-			function CopyToClipboard(containerid) {
-			  if (document.selection) {
-				var range = document.body.createTextRange();
-				range.moveToElementText(document.getElementById(containerid));
-				range.select().createTextRange();
-				document.execCommand("copy");
-			  } else if (window.getSelection) {
-				var range = document.createRange();
-				range.selectNode(document.getElementById(containerid));
-				window.getSelection().addRange(range);
-				document.execCommand("copy");
-			  }
-			}
-	</script>
-	-->
 <!-- 3. Instantiate clipboard.js by passing a string selector. .copyButton changed to .btn-clipboard to tie into the boostrap button styling -->    
     <script>
 		var clipboard = new Clipboard('.btn-clipboard');
