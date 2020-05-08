@@ -25,6 +25,7 @@
 	<!-- CSS for Prettify -->
 	<script src="../Global/google-code-prettify/run_prettify.js"></script>  
 	<link rel="stylesheet" type="text/css" href="../Global/google-code-prettify/skins/default.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hello, world!</title>
   </head>
   <body>
@@ -70,11 +71,41 @@
 		</nav>
 	</header>
 	<!-- Side nav content-->
+		<!--<div class="sidenav">
+			<a href="#about">About</a>
+			<a href="#services">Services</a>
+			<a href="#clients">Clients</a>
+			<a href="#contact">Contact</a>
+			<button class="dropdown-btn">Dropdown
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			 </div>
+			<a href="#contact">Search</a>
+		</div> -->
+		
 	<div class="container-fluid">
 		<div class="row">
 			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
 			  <div class="sidebar-sticky">
 				<ul class="nav flex-column">
+					<div class="sidenav">
+						<a class="nav-link active" href="#"><i class="fa fa-fw fa-home"></i>Active</a>
+						<a href="#services"><i class="fa fa-fw fa-book"></i>Services</a>
+						<a href="#clients"><i class="fa fa-fw fa-book"></i>Clients</a>
+						<a href="#contact"><i class="fa fa-fw fa-book"></i>Contact</a>
+						<button class="dropdown-btn">Dropdown
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-container">
+							<a href="#"><i class="fa fa-fw fa-book"></i>Link 1</a>
+							<a href="#"><i class="fa fa-fw fa-book"></i>Link 2</a>
+							<a href="#"><i class="fa fa-fw fa-book"></i>Link 3</a>
+						</div>
+					</div>
 					<a class="nav-link active" href="#">Active</a>
 					<a class="nav-link" href="#">Link</a>
 					<a class="nav-link" href="#">Link</a>
@@ -343,6 +374,23 @@
 		  console.log(e);
 		});
     </script>
+	<script>
+	//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+	var dropdown = document.getElementsByClassName("dropdown-btn");
+	var i;
+
+	for (i = 0; i < dropdown.length; i++) {
+	  dropdown[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var dropdownContent = this.nextElementSibling;
+		if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		} else {
+		  dropdownContent.style.display = "block";
+		}
+	  });
+	}
+	</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
