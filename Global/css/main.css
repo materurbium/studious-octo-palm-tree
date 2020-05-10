@@ -135,12 +135,12 @@ section.jumbotron.text-center {
   left: 0; 
   background-color: #111;*/
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 /* Style the sidenav links and the dropdown button */
 .sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
+  padding: 0px
   text-decoration: none;
   /*font-size: 20px; */
   display: block;
@@ -186,4 +186,37 @@ section.jumbotron.text-center {
 .fa-caret-down {
   float: right;
   padding-right: 8px;
+}
+
+/* Side nav padding */
+
+nav.col-md-2.d-none.d-md-block.bg-light.sidebar {
+	padding-top: 10px;
+}
+
+.sidebar-sticky {
+	padding: 5px;
+	padding-top: 10px;
+}
+
+.nav-link {
+	padding-left: 0px;
+	padding-top: 8px;
+	color: #333;
+}
+
+.nav-link.active {
+	color: #007bff;
+	font-weight: 500;
+}
+/* Search button custom color */
+.btn-outline-success {
+	color: lightblue;
+	border-color: lightblue;
+}
+
+.btn-outline-success:hover {
+	color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
 }
