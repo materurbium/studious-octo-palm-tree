@@ -122,7 +122,7 @@ div.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.p
 
 section.jumbotron.text-center {
 	padding-top: 80px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
 }
 
 /* Fixed sidenav, full height */
