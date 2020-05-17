@@ -25,11 +25,12 @@
 	<!-- CSS for Prettify -->
 	<script src="../Global/google-code-prettify/run_prettify.js"></script>  
 	<link rel="stylesheet" type="text/css" href="../Global/google-code-prettify/skins/default.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hello, world!</title>
   </head>
   <body>
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="#">Navbar</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -70,83 +71,57 @@
 		</nav>
 	</header>
 	<!-- Side nav content-->
+		<!--<div class="sidenav">
+			<a href="#about">About</a>
+			<a href="#services">Services</a>
+			<a href="#clients">Clients</a>
+			<a href="#contact">Contact</a>
+			<button class="dropdown-btn">Dropdown
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-container">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			 </div>
+			<a href="#contact">Search</a>
+		</div> -->
+		
 	<div class="container-fluid">
 		<div class="row">
 			<nav class="col-md-2 d-none d-md-block bg-light sidebar">
 			  <div class="sidebar-sticky">
 				<ul class="nav flex-column">
-					<a class="nav-link active" href="#">Active</a>
-					<a class="nav-link" href="#">Link</a>
-					<a class="nav-link" href="#">Link</a>
-					<a class="nav-link disabled" href="#">Disabled</a>
-				  <li class="nav-item">
-					<a class="nav-link active" href="#">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-					  Introduction <span class="sr-only">(current)</span>
-					</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
-					  Orders
-					</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-					  Products
-					</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-					  Customers
-					</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-					  Reports
-					</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-					  Integrations
-					</a>
-				  </li>
-				</ul>
-				<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-				  <span>Saved reports</span>
-				  <a class="d-flex align-items-center text-muted" href="#">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
-				  </a>
-				</h6>
-				<ul class="nav flex-column mb-2">
-				  <li class="nav-item">
-					<a class="nav-link" href="#">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-					  Current month
-					</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-					  Last quarter
-					</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-					  Social engagement
-					</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="#">
-					  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-					  Year-end sale
-					</a>
-				  </li>
+					<div class="sidenav">
+						<a class="nav-link active" href="#"><i class="fa fa-fw fa-home"></i>Active</a>
+						<a class="nav-link" href="#services"><i class="fa fa-fw fa-book"></i>Services</a>
+						<a class="nav-link" href="#clients"><i class="fa fa-fw fa-book"></i>Clients</a>
+						<a class="nav-link" href="#contact"><i class="fa fa-fw fa-book"></i>Contact</a>
+						<a class="nav-link dropdown-btn" href="#contact"><i class="fa fa-fw fa-book"></i>Dropdown
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-container">
+							<a class="nav-link" href="#"><i class="fa fa-fw fa-book"></i>Link 1</a>
+							<a class="nav-link" href="#"><i class="fa fa-fw fa-book"></i>Link 2</a>
+							<a class="nav-link" href="#"><i class="fa fa-fw fa-book"></i>Link 3</a>
+						</div>
+						<a class="nav-link dropdown-btn" href="#contact"><i class="fa fa-fw fa-book"></i>Dropdown
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-container">
+							<a class="nav-link" href="#"><i class="fa fa-fw fa-book"></i>Link 1</a>
+							<a class="nav-link" href="#"><i class="fa fa-fw fa-book"></i>Link 2</a>
+							<a class="nav-link" href="#"><i class="fa fa-fw fa-book"></i>Link 3</a>
+						</div>
+						<a class="nav-link dropdown-btn" href="#contact"><i class="fa fa-fw fa-book"></i>Dropdown
+							<i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-container">
+							<a class="nav-link" href="#"><i class="fa fa-fw fa-book"></i>Link 1</a>
+							<a class="nav-link" href="#"><i class="fa fa-fw fa-book"></i>Link 2</a>
+							<a class="nav-link" href="#"><i class="fa fa-fw fa-book"></i>Link 3</a>
+						</div>
+					</div>
 				</ul>
 			  </div>
 			</nav>
@@ -167,6 +142,7 @@
 								</ol>
 							</nav>
 						</div>
+						<!-- Begin page content -->
 						<div class="container-fluid">
 							<main role="main" class="container-sub">
 								<div class="row">
@@ -197,7 +173,7 @@
 									</div>
 								<textarea placeholder="Press ctrl+v to Paste the copied text" rows="10" cols="100"></textarea> -->
 								<!-- Start -->
-								<h2>Code Sample A Page Four</h2>
+								<h2>Code Sample A Page Six</h2>
 								<!--<script async src="https://cse.google.com/cse.js?cx=017763480075036721278:rjanrtcieu9"></script>
 								<div class="gcse-search"></div>-->
 								<div style="background-color: #f7f7f9; width:50%;">
@@ -238,73 +214,6 @@
 			</nav>
 		</div>
 	</div>
-	<!-- Begin page content -->
-			<div class="container-fluid">
-				<main role="main" class="container-sub">
-				<div class="row">
-					<div class="col-12 col-md-8">
-						<h1>Formatting Code Samples with Javascript</h1>
-					</div>
-					<div class="col-6 col-md-4">
-						<a href="https://github.com/GMC-Team/studious-octo-palm-tree/blob/master/2.0/main-2.0.html" class="btn btn-link" target="_blank">Edit</a>
-					</div>
-				</div>
-				<p class="lead">A simple way to format code samples and add a copy button<p>
-				<p>The look and feel of the code samples comes from <a href="https://github.com/googlearchive/code-prettify">Google's prettify Javascript.</a></p>
-				<p>The Copy button in the code samples below is styled from Bootstrap's CSSs. The only thing that I couldn't get to work was the tooltip on hover the way the official Bootstrap site has it. Would be cool to have that, but it's not the main thing right now. The main thing is that you can copy code multiple samples. I orginally chose another Javascript option for copying code snippets. At first, clipboard.js was difficult to understand, since I don't have a great Javascript understanding. First attempt using <a href="https://stackoverflow.com/questions/36639681/how-to-copy-text-from-a-div-to-clipboard">this JavaScript</a>. This didn't work because, though it successfully copied the code sample to the clipboard, multiple samples on the same page didn't work; you could copy one, but not more than one.</p>
-				<p>The solution came with using <a href="https://clipboardjs.com/">clipboard.js</a>, though that took a while to figure out. </p>
-				<!-- <h2>Code Sample 1</h2>
-					<div style="background-color: #f7f7f9; width:75%;">
-						<div style="display:flex; justify-content:flex-end; width:100%; padding-right:10px; padding-top:10px;">
-							<button class="btn-clipboard" style="position:relative; top:0; right:0;" title data-original-title="Copy to clipboard" onclick="CopyToClipboard('div1')">Copy</button>
-						</div>
-						<pre class="prettyprint" style="border:none;" id="div1">
-  class Voila 1{
-    public:
-    // Voila
-    static const string VOILA = "Voila";
-    // will not interfere with embedded tags.
-	}
-						</pre>	
-					</div>
-				<textarea placeholder="Press ctrl+v to Paste the copied text" rows="10" cols="100"></textarea> -->
-				<!-- Start -->
-				<h2>Code Sample A Page Six</h2>
-				<script async src="https://cse.google.com/cse.js?cx=017763480075036721278:rjanrtcieu9"></script>
-				<div class="gcse-search"></div>
-				<div style="background-color: #f7f7f9; width:50%;">
-					<div style="display:flex; justify-content:flex-end; width:100%; padding-right:10px; padding-top:10px;">
-						<button class="btn-clipboard" style="position:relative; top:0; right:0;"  id="copyButtonId" data-id="@item.Type" data-clipboard-action="copy" data-clipboard-target="pre#copyA">Copy</button>
-					</div>
-					<pre class="prettyprint" style="border:none;" id="copyA">
-  class Number A {
-    public:
-    // Voila
-    static const string VOILA = "Voila";
-    // will not interfere with embedded tags.
-	}
-					</pre>
-				</div>
-				<textarea placeholder="Press ctrl+v to paste the copied text" rows="10" cols="90" style="width:50%";></textarea>
-				<!-- End -->
-				<!-- Start -->
-				<h2>Code Sample B</h2>
-				<div style="background-color: #f7f7f9; width:50%;">
-					<div style="display:flex; justify-content:flex-end; width:100%; padding-right:10px; padding-top:10px;">
-						<button class="btn-clipboard" style="position:relative; top:0; right:0;"  id="copyButtonId" data-id="@item.Type" data-clipboard-action="copy" data-clipboard-target="pre#copyB">Copy</button>
-					</div>
-					<pre class="prettyprint" style="border:none;" id="copyB">
-  class Number B {
-    public:
-    // Voila
-    static const string VOILA = "Voila";
-    // will not interfere with embedded tags.
-	}
-					</pre>
-				</div>
-				<textarea placeholder="Press ctrl+v to paste the copied text" rows="10" cols="90" style="width:50%";></textarea>
-				<!-- End -->
-		</main>
 	</div>
 	</div>
 	</div>
@@ -343,6 +252,23 @@
 		  console.log(e);
 		});
     </script>
+	<script>
+	//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+	var dropdown = document.getElementsByClassName("dropdown-btn");
+	var i;
+
+	for (i = 0; i < dropdown.length; i++) {
+	  dropdown[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var dropdownContent = this.nextElementSibling;
+		if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		} else {
+		  dropdownContent.style.display = "block";
+		}
+	  });
+	}
+	</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
