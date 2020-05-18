@@ -173,4 +173,5 @@ div.hidden {
 
 .gsc-control-cse.gsc-control-cse-en {
   display: none;
+  background: transparent;
 }
