@@ -179,3 +179,10 @@ div.hidden {
   padding: 0px;
   border: 0px;
 }
+
+.cse.gsc-control-cse.gsc-control-cse-en {
+  display: none;
+  background-color: transparent;
+  padding: 0px;
+  border: 0px;
+}
