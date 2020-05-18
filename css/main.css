@@ -166,3 +166,7 @@ div.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.p
   float: right;
   padding-right: 8px;
 }
+
+div.hidden {
+  display: none;
+}
