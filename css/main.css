@@ -169,7 +169,7 @@ div.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.p
 
 /* Styles for Search bar */
 
-div.hidden {
+.hidden {
   display: none;
 }
 .gsc-control-cse .gsc-control-cse-en
@@ -177,9 +177,6 @@ div.hidden {
   display: none;
 }
 
-/* Selector for entire element. */
-.cse .gsc-control-cse,
-.gsc-control-cse {
-  background-color: red;
-  border: 1px solid #fff;
+.blue {
+  background-color: blue;
 }
