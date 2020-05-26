@@ -172,8 +172,7 @@ div.d-flex.justify-content-between.flex-wrap.flex-md-nowrap.align-items-center.p
 div.hidden {
   display: none;
 }
-
-div.gsc-control-cse.gsc-control-cse-en
+.gsc-control-cse .gsc-control-cse-en
 {
   display: none;
 }
