@@ -177,8 +177,9 @@ div.hidden {
   display: none;
 }
 
-.cse .gsc-control-cse-en
-{
-  display: none;
+/* Selector for entire element. */
+.cse .gsc-control-cse,
+.gsc-control-cse {
   background-color: red;
+  border: 1px solid #fff;
 }
