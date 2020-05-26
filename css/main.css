@@ -176,3 +176,9 @@ div.hidden {
 {
   display: none;
 }
+
+.cse .gsc-control-cse-en
+{
+  display: none;
+  background-color: red;
+}
