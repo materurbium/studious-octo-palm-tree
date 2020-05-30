@@ -172,7 +172,7 @@ section.jumbotron.text-center {
 
 /* Add an active class to the active dropdown button */
 .dropdown-btn:hover {
-  color: #152B8E;
+  color: red;
 }
 
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
