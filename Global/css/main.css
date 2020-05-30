@@ -210,7 +210,7 @@ nav.col-md-2.d-none.d-md-block.bg-light.sidebar {
 }
 
 .nav-link.active {
-	color: #007bff;
+	color: red;
 	font-weight: 500;
 }
 /* Search button custom color
