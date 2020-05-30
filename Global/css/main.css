@@ -205,12 +205,12 @@ nav.col-md-2.d-none.d-md-block.bg-light.sidebar {
 	color: #333;
 }
 
-.nav-link.hover {
-	color: red;
+a.nav-link:hover {
+	color: #0056b3;
 }
 
 .nav-link.active {
-	color: red;
+	color: #007bff;
 	font-weight: 500;
 }
 /* Search button custom color
