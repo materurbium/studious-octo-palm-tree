@@ -202,7 +202,7 @@ nav.col-md-2.d-none.d-md-block.bg-light.sidebar {
 .nav-link {
 	padding-left: 0px;
 	padding-top: 8px;
-	color: #333;
+	color: red;
 }
 
 .nav-link.active {
