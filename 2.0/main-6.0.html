@@ -27,7 +27,6 @@
 	<link rel="stylesheet" type="text/css" href="../Global/google-code-prettify/skins/default.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="../Global/css/main.css" rel="stylesheet">
-
     <title>Hello, world!</title>
   </head>
   <body>
@@ -82,7 +81,14 @@
 			  <div class="sidebar-sticky">
 				<ul class="nav flex-column">
 					<div class="sidenav">
-						<a class="nav-link active" href="#"><i class="fa fa-fw fa-home"></i>Active</a>
+						<div class="row">
+							<div class="col leftnav">
+								<input type="checkbox">
+							</div>
+							<div class="col leftnav title">
+								<a class="nav-link active" href="#">Step 1</a>
+							</div>
+						</div>
 						<a class="nav-link" href="#services"><i class="fa fa-fw fa-book"></i>Services</a>
 						<a class="nav-link" href="#clients"><i class="fa fa-fw fa-book"></i>Clients</a>
 						<a class="nav-link" href="#contact"><i class="fa fa-fw fa-book"></i>Contact</a>
@@ -136,7 +142,7 @@
 						<main role="main" class="container-sub">
 							<div class="row">
 								<div class="col-12 col-md-8">
-									<h1>Formatting Code Samples with Javascript</h1>
+								<h1>Formatting Code Samples with Javascript</h1>
 								</div>
 								<div class="col-6 col-md-4">
 									<a href="https://github.com/GMC-Team/studious-octo-palm-tree/blob/master/2.0/main-2.0.html" class="btn btn-link" target="_blank">Edit</a>
@@ -146,6 +152,7 @@
 							<p>The look and feel of the code samples comes from <a href="https://github.com/googlearchive/code-prettify">Google's prettify Javascript.</a></p>
 							<p>The Copy button in the code samples below is styled from Bootstrap's CSSs. The only thing that I couldn't get to work was the tooltip on hover the way the official Bootstrap site has it. Would be cool to have that, but it's not the main thing right now. The main thing is that you can copy code multiple samples. I orginally chose another Javascript option for copying code snippets. At first, clipboard.js was difficult to understand, since I don't have a great Javascript understanding. First attempt using <a href="https://stackoverflow.com/questions/36639681/how-to-copy-text-from-a-div-to-clipboard">this JavaScript</a>. This didn't work because, though it successfully copied the code sample to the clipboard, multiple samples on the same page didn't work; you could copy one, but not more than one.</p>
 							<p>The solution came with using <a href="https://clipboardjs.com/">clipboard.js</a>, though that took a while to figure out. </p>
+							
 							<!-- <h2>Code Sample 1</h2>
 								<div style="background-color: #f7f7f9; width:75%;">
 									<div style="display:flex; justify-content:flex-end; width:100%; padding-right:10px; padding-top:10px;">

@@ -224,3 +224,15 @@ a.nav-link:hover {
     background-color: #007bff;
     border-color: #007bff;
 } */
+
+.leftnav {
+	background-color: pink;
+	padding: 0px 0px 0px 20px;
+	width: 10%;
+}
+
+.title {
+	background-color: orange;
+	padding: 0px;
+	margin: 0px;
+}
