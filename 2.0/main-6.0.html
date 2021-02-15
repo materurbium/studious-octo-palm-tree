@@ -81,14 +81,7 @@
 			  <div class="sidebar-sticky">
 				<ul class="nav flex-column">
 					<div class="sidenav">
-						<div class="row">
-							<div class="col leftnav">
-								<input type="checkbox">
-							</div>
-							<div class="col leftnav title">
-								<a class="nav-link active" href="#">Step 1</a>
-							</div>
-						</div>
+						<a class="nav-link active" href="#"><i class="fa fa-fw fa-home"></i>Active</a>
 						<a class="nav-link" href="#services"><i class="fa fa-fw fa-book"></i>Services</a>
 						<a class="nav-link" href="#clients"><i class="fa fa-fw fa-book"></i>Clients</a>
 						<a class="nav-link" href="#contact"><i class="fa fa-fw fa-book"></i>Contact</a>
@@ -163,9 +156,13 @@
 											<p id="demo2"></p>
 											<h2>Step 3</h2>
 											<p>Ensure that your personal <b>Display</b> configurations match those displayed below:</p>
-											<img src="../images/1.png" alt="Flowers in Chania">
+											<div class="text-center">
+												<img src="../images/1.png" alt="Flowers in Chania" class="responsive">
+											</div>
 											<p>Now Click on the icon next to the Metadata/Score Setting Display option to View or change visual metadata and Scores and ensure that your settings match those displayed below; click Save when finished:</p>
-											<img src="../images/2.png" alt="Flowers in Chania">
+											<div class="text-center">
+												<img src="../images/2.png" alt="Flowers in Chania" class="responsive">
+											</div>
 											<h2>Step 4</h2>																					
 											<label for="exampleInputEmail">View your search results now. How are they being sorted?</label>
 											<input type="text" class="form-control" id="numb3" aria-describedby="emailHelp" placeholder="Enter number">
@@ -173,9 +170,19 @@
 											<p id="demo3"></p>											
 											<label for="exampleInputEmail">Sort them by Percent Silence (found under Measures) and in Descending order. Which call had the highest Percent Silence? (Eureka ID, Agent Name & Percentage of Silence on call):</label>
 											<input type="text" class="form-control" id="numb4" aria-describedby="emailHelp" placeholder="Enter number">
-											<small id="emailHelp" class="form-text text-muted">Please input a number between 1 and 10.</small>
-											<p id="demo4"></p>													
-												
+											<small id="emailHelp" class="form-text text-muted">Please select a contact.</small>
+											<p id="demo4"></p>		
+											<h2>Step 4</h2>	
+											<label for="exampleFormControlSelect1">Sort them by Percent Silence (found under Measures) and in Descending order. Which call had the highest Percent Silence? (Eureka ID, Agent Name & Percentage of Silence on call):</label>
+												<select class="form-control" id="numb5">
+													<option>1</option>	
+												  	<option>2</option>
+												  	<option>3</option>
+												  	<option>4</option>
+												  	<option>5</option>
+												</select>
+											<small id="emailHelp" class="form-text text-muted">Please select a contact.</small>
+											<p id="demo5"></p>													
 											</p>
 										</div>
 									</form>
