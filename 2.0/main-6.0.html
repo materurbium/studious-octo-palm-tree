@@ -166,8 +166,8 @@
 												<img src="../images/2.png" alt="Flowers in Chania" class="responsive">
 											</div>
 											<h2>Step 4</h2>																															
-											<label for="exampleFormControlSelect1">View your search results now. How are they being sorted?. Which call had the highest Percent Silence? (Eureka ID, Agent Name & Percentage of Silence on call):</label>
-												<select class="form-control" id="numb3">
+											<label for="exampleFormControlSelect1">View your search results now. How are they being sorted?</label>
+												<select class="form-control" id="numb3" placeholder="Select an option">
 													<option>...</option>	
 													<option>Option 1</option>	
 													<option>Option 2</option>
@@ -420,7 +420,7 @@
 		  x = document.getElementById("numb3").value;
 		
 		  // If x is Not a Number or less than one or greater than 10
-		  if (isNaN(x) || x!="Option 5"){
+		  if (isNaN(x) || x!="Option 5") {
 			text = "Incorrect.";
 			document.getElementById("numb3").style.background = "#d9534f"; 
 			document.getElementById("numb3").style.color = "#f7f7f7";
