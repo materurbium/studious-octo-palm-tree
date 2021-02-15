@@ -165,13 +165,9 @@
 											<div class="text-center">
 												<img src="../images/2.png" alt="Flowers in Chania" class="responsive">
 											</div>
-											<h2>Step 4</h2>																					
-											<label for="exampleInputEmail">View your search results now. How are they being sorted?</label>
-											<input type="text" class="form-control" id="numb3" aria-describedby="emailHelp" placeholder="Enter number">
-											<small id="emailHelp" class="form-text text-muted">Please input a number between 1 and 10.</small>
-											<p id="demo3"></p>											
+											<h2>Step 4</h2>																															
 											<label for="exampleFormControlSelect1">View your search results now. How are they being sorted?. Which call had the highest Percent Silence? (Eureka ID, Agent Name & Percentage of Silence on call):</label>
-												<select class="form-control" id="numb4">
+												<select class="form-control" id="numb3">
 													<option>...</option>	
 													<option>Option 1</option>	
 													<option>Option 2</option>
@@ -180,7 +176,7 @@
 													<option>Option 5</option>
 												</select>
 											<button type="button" class="btn btn-primary" onclick="CheckNumC()" style="margin-top: 1%;">Submit</button>
-											<p id="demo2" style="padding-top: 1%; margin-bottom: 1%;"></p>
+											<p id="demo3" style="padding-top: 1%; margin-bottom: 1%;"></p>
 											<small id="emailHelp" class="form-text text-muted">Please select a contact.</small>											
 											<label for="exampleFormControlSelect1">Sort them by Percent Silence (found under Measures) and in Descending order. Which call had the highest Percent Silence? (Eureka ID, Agent Name & Percentage of Silence on call):</label>
 												<select class="form-control" id="numb4">
@@ -390,11 +386,11 @@
 		  // If x is Not a Number or less than one or greater than 10
 		  if (isNaN(x) || x < 1 || x > 10) {
 			text = "Incorrect.";
-			document.getElementById("numb").style.background = "#ffc107"; 
+			document.getElementById("numb").style.background = "#d9534f"; 
 			document.getElementById("numb").style.color = "#f7f7f7";
 		  } else {
 			text = "Correct!";
-			document.getElementById("numb").style.background = "#28a745";
+			document.getElementById("numb").style.background = "#5cb85c";
 			document.getElementById("numb").style.color = "#f7f7f7";
 		  }
 		  document.getElementById("demo").innerHTML = text;
@@ -408,11 +404,11 @@
 		  // If x is Not a Number or less than one or greater than 10
 		  if (isNaN(x) || x < 1 || x > 10) {
 			text = "Incorrect.";
-			document.getElementById("numb2").style.background = "#ffc107"; 
+			document.getElementById("numb2").style.background = "#d9534f"; 
 			document.getElementById("numb2").style.color = "#f7f7f7";
 		  } else {
 			text = "Correct!";
-			document.getElementById("numb2").style.background = "#28a745";
+			document.getElementById("numb2").style.background = "#5cb85c";
 			document.getElementById("numb2").style.color = "#f7f7f7";
 		  }
 		  document.getElementById("demo2").innerHTML = text;
@@ -426,11 +422,11 @@
 		  // If x is Not a Number or less than one or greater than 10
 		  if (isNaN(x) || x!="Option 5"){
 			text = "Incorrect.";
-			document.getElementById("numb3").style.background = "#ffc107"; 
+			document.getElementById("numb3").style.background = "#d9534f"; 
 			document.getElementById("numb3").style.color = "#f7f7f7";
 		  } else {
 			text = "Correct!";
-			document.getElementById("numb3").style.background = "#28a745";
+			document.getElementById("numb3").style.background = "#5cb85c";
 			document.getElementById("numb3").style.color = "#f7f7f7";
 		  }
 		  document.getElementById("demo3").innerHTML = text;
