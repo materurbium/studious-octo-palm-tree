@@ -377,7 +377,7 @@
 		  // If x is Not a Number or less than one or greater than 10
 		  if (isNaN(x) || x < 1 || x > 10) {
 			text = "Incorrect.";
-			$(this).css('color', 'green');
+			document.getElementById('numb').style.color = "red";
 		  } else {
 			text = "Correct!";
 		  }
