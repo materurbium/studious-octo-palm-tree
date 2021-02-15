@@ -417,10 +417,11 @@
 		  var x, text;
 		
 		  // Get the value of the input field with id="numb"
-		  x = document.getElementById("numb3").selectedIndex = 6;
+		  	var x = document.getElementById("numb3");
+			var x2 = x.options[x.selectedIndex].text;
 		
 		  // If x is Not a Number or less than one or greater than 10
-		  if (isNaN(x) || x != "Option 5") {
+		  if (x2 != "Option 5") {
 			text = "Incorrect.";
 			x = "red"; 
 			document.getElementById("numb3").style.color = "#f7f7f7";
