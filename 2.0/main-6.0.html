@@ -377,10 +377,11 @@
 		  // If x is Not a Number or less than one or greater than 10
 		  if (isNaN(x) || x < 1 || x > 10) {
 			text = "Incorrect.";
+			document.getElementById("demo").style.color = "red"; 
 		  } else {
 			text = "Correct!";
+			document.getElementById("demo").style.color = "green"; 
 		  }
-		  document.getElementById("demo").style.color = "red"; 
 		  document.getElementById("demo").innerHTML = text;
 		}
 		</script>
