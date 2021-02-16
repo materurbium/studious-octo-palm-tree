@@ -168,19 +168,19 @@
 											<h2>Step 4</h2>																															
 											<label for="exampleFormControlSelect1">View your search results now. How are they being sorted?</label>
 												<select class="form-control" id="numb3" placeholder="Select an option">
-													<option>...</option>	
+													<option>-- Select --</option>	
 													<option>Option 1</option>	
 													<option>Option 2</option>
 													<option>Option 3</option>
 													<option>Option 4</option>
-													<option>Option 5</option>
+													<option selected>Option 5</option>
 												</select>
 											<button type="button" class="btn btn-primary" onclick="CheckNumC()" style="margin-top: 1%;">Submit</button>
 											<p id="demo3" style="padding-top: 1%; margin-bottom: 1%;"></p>
 											<small id="emailHelp" class="form-text text-muted">Please select a contact.</small>											
 											<label for="exampleFormControlSelect1">Sort them by Percent Silence (found under Measures) and in Descending order. Which call had the highest Percent Silence? (Eureka ID, Agent Name & Percentage of Silence on call):</label>
 												<select class="form-control" id="numb4">
-													<option>...</option>	
+													<option>-- Select --</option>	
 													<option>Call 1</option>	
 													<option>Call 2</option>
 													<option>Call 3</option>
@@ -417,13 +417,13 @@
 		  var x, text;
 		
 		  // Get the value of the input field with id="numb"
-		  	var x = document.getElementById("numb3");
-			var x2 = x.options[x.selectedIndex].text;
+		  	var e = document.getElementById("numb3");
+    		var result = e.options[e.selectedIndex].text;
 		
 		  // If x is Not a Number or less than one or greater than 10
-		  if (x2 != "Option 5") {
+		  if (result != "Option 5") {
 			text = "Incorrect.";
-			x = "red"; 
+			document.getElementById("numb3").style.background = "red"; 
 			document.getElementById("numb3").style.color = "#f7f7f7";
 		  } else {
 			text = "Correct!";
