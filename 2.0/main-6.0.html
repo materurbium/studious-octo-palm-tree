@@ -183,7 +183,7 @@
 													<option>-- Select --</option>	
 													<option>Call 1</option>	
 													<option>Call 2</option>
-													<option>Call 3</option>
+													<option selected>Call 3</option>
 													<option>Call 4</option>
 													<option>Call 5</option>
 												</select>
@@ -423,7 +423,7 @@
 		  // If x is Not a Number or less than one or greater than 10
 		  if (result != "Option 5") {
 			text = "Incorrect.";
-			document.getElementById("numb3").style.background = "red"; 
+			document.getElementById("numb3").style.background = "#d9534f"; 
 			document.getElementById("numb3").style.color = "#f7f7f7";
 		  } else {
 			text = "Correct!";
@@ -431,6 +431,25 @@
 			document.getElementById("numb3").style.color = "#f7f7f7";
 		  }
 		  document.getElementById("demo3").innerHTML = text;
+		}
+		function CheckNumD() {
+		  var x, text;
+		
+		  // Get the value of the input field with id="numb"
+		  	var e = document.getElementById("numb4");
+    		var result = e.options[e.selectedIndex].text;
+		
+		  // If x is Not a Number or less than one or greater than 10
+		  if (result != "Call 3") {
+			text = "Incorrect.";
+			document.getElementById("numb4").style.background = "#d9534f"; 
+			document.getElementById("numb4").style.color = "#f7f7f7";
+		  } else {
+			text = "Correct!";
+			document.getElementById("numb4").style.background = "#5cb85c";
+			document.getElementById("numb4").style.color = "#f7f7f7";
+		  }
+		  document.getElementById("demo4").innerHTML = text;
 		}
 	</script>
 </body>
