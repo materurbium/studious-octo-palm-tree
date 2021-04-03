@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The onclick Event 2</h1>
+
+<p>The onclick event is used to trigger a function when an element is clicked on.</p>
+
+<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+
+<button onclick="fetchAndLog()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+    const fetchAndLog = async () => {
+        const response = await fetch("https://api.github.com/repos/materurbium/studious-octo-palm-tree/contents/index.html", {
+    headers: {
+        Accept: "application/vnd.github.v3.raw",
+        Authorization: "token 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"
+    }
+    });
+        const json = await response.json();
+        // just log ‘json’
+        console.log(json);
+}
+</script>
+
+</body>
+</html>
+
+const fetchAndLog = async () => {
+    const response = await fetch('https://facebook.github.io/react-native/movies.json');
+    const json = await response.json();
+    // just log ‘json’
+    console.log(json);
+}
+
+fetchAndLog();
