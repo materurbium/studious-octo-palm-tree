@@ -8,12 +8,37 @@
 
 <p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
 
-<button onclick="myFunction()">Click me</button>
+<button onclick="myFunction2()">Click me</button>
 
 <p id="demo"></p>
 
 <script>
 function myFunction() {
+    fetch('https://api.github.com/orgs/nodejs', {
+  credentials: 'include', // Useful for including session ID (and, IIRC, authorization headers)
+})
+.then(response => response.json())
+.then(data => {
+  console.log(data) // Prints result from `response.json()`
+})
+.catch(error => console.error(error))
+}
+
+
+function myFunction2() {
+    fetch('https://api.github.com/orgs/nodejs', {
+  headers: new Headers({
+    'User-agent': 'Mozilla/4.0 Custom User Agent'
+  })
+})
+.then(response => response.json())
+.then(data => {
+  console.log(data)
+})
+.catch(error => console.error(error))
+}
+
+function myFunction3() {
     fetch('https://api.github.com/orgs/nodejs')
 .then(response => response.json())
 .then(data => {
@@ -22,7 +47,16 @@ function myFunction() {
 .catch(error => console.error(error))
 }
 
-function myFunction2() {
+function myFunction4() {
+    fetch('https://api.github.com/orgs/nodejs')
+.then(response => response.json())
+.then(data => {
+  console.log(data) // Prints result from `response.json()` in getRequest
+})
+.catch(error => console.error(error))
+}
+
+function myFunction4() {
     fetch ('https://raw.githubusercontent.com/materurbium/docker-test/main/index.html')
     .then(
     function(response) {
