@@ -20,6 +20,14 @@
 function myFunction() {
     fetch('https://api.github.com/users/materurbium/repos', {
   credentials: 'include', // Useful for including session ID (and, IIRC, authorization headers)
+  method: 'post', 
+           mode: 'cors',
+           withCredentials: true,
+           headers = {
+            'Authorization': "Bearer "+sessionStorage.jwt,
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+           }
 })
 .then(response => response.json())
 .then(data => {
