@@ -14,14 +14,9 @@
 
 <script>
   function myFunction() {
-    response.setHeader("Access-Control-Allow-Origin", "*");
-    response.setHeader("Access-Control-Allow-Credentials", "true");
-    response.setHeader("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
-    response.setHeader("Access-Control-Allow-Headers", "Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers");
     fetch('https://api.github.com/repos/materurbium/studious-octo-palm-tree/contents/index.html',{ 
-
       headers: { 
-      'credentials': 'include',
+      'credentials': 'same origin',
       'Access-Control-Allow-Origin': 'https://materurbium.github.io',
       Authorization: `token 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`}
       }
