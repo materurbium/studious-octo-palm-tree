@@ -19,15 +19,10 @@
 <script>
 function myFunction() {
     fetch('https://api.github.com/users/materurbium/repos', {
-  method: 'GET', 
-           mode: 'cors',
-           withCredentials: true,
-           headers = {
-            'Authorization': "Bearer "+sessionStorage.jwt,
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
-           }
-})
+        method: 'GET', 
+        mode: 'cors',
+        withCredentials: true,
+        headers: {'Authorization': 'Bearer','Content-Type': 'application/json', 'Accept': 'application/json'}})
 .then(response => response.json())
 .then(data => {
   console.log(data) // Prints result from `response.json()`
