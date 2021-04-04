@@ -15,7 +15,8 @@
 <script>
   function myFunction() {
     fetch('https://api.github.com/repos/materurbium/studious-octo-palm-tree/contents/index.html',{ 
-      credentials: 'include',
+      'credentials': 'include',
+      'Access-Control-Allow-Origin': 'https://api.github.com',
       headers: { Authorization: `token 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`}})
     .then(
     function(response) {
