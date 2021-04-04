@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<h1>The onclick Event 5</h1>
+<h1>The onclick Event 6</h1>
 
 <p>The onclick event is used to trigger a function when an element is clicked on.</p>
 
@@ -17,6 +17,7 @@ function myFunction() {
     fetch ('https://api.github.com/repos/materurbium/studious-octo-palm-tree/contents/index.html', {
         method: "GET",
         Origin: 'https://materurbium.github.io',
+        'Access-Control-Allow-Origin': 'https://materurbium.github.io',
         headers: {
         Authorization: `token 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` 
         }
