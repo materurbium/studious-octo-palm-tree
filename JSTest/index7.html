@@ -14,14 +14,8 @@
 
 <script>
 function myFunction() {
-    fetch ('https://raw.githubusercontent.com/materurbium/docker-test/main/index.html', {
-      headers: {
-      method: "GET",
-      Origin: 'https://materurbium.github.io',
-      'Access-Control-Allow-Origin': 'https://materurbium.github.io',  
-      Authorization: `token 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` 
-      }
-    })
+    fetch ('https://raw.githubusercontent.com/materurbium/docker-test/main/index.html', 
+    )
   .then(
     function(response) {
       if (response.status !== 200) {
