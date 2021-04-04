@@ -15,12 +15,12 @@
 <script>
 function myFunction() {
     fetch ('https://api.github.com/repos/materurbium/studious-octo-palm-tree/contents/index.html', {
-        method: "GET",
-        Origin: 'https://materurbium.github.io/',
-        'Access-Control-Allow-Origin': 'https://materurbium.github.io/',
-        headers: {
-        Authorization: `token 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` 
-        }
+      headers: {
+      method: "GET",
+      Origin: 'https://materurbium.github.io/',
+      'Access-Control-Allow-Origin': 'https://materurbium.github.io/',  
+      Authorization: `token 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` 
+      }
     })
   .then(
     function(response) {
